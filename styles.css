@@ -1,0 +1,154 @@
+/* .annotation {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 2px;
+    border-radius: 2px;
+  }
+  
+  .annotation-note {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+  }
+   */
+
+
+/*
+
+   .annotation {
+    background-color: yellow; 
+    color: black;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.annotation-note {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+    max-width: 95%; 
+    word-wrap: break-word; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search, .color-picker, .note, .buttons {
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    margin-right: 5px;
+}
+
+#annotations-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.annotation-item {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+  
+}
+
+
+*/
+
+
+
+
+/* UPDATED */
+
+
+.annotation {
+  background-color: yellow; /* Ensure highlights are visible */
+  color: black;
+  padding: 2px;
+  border-radius: 2px;
+}
+
+.annotation-note {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 3px;
+  max-width: 95%; /* Prevents the note from stretching too wide */
+  word-wrap: break-word; /* Ensures long words do not overflow */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fdfdfd;
+}
+
+.search, .color-picker, .note, .buttons {
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="color"], textarea {
+  width: calc(100% - 20px);
+  padding: 5px;
+  margin: 5px 0;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#annotations-list {
+  max-height: 200px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.annotation-item {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}

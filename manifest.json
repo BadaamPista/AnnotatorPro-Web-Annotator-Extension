@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "AnnotatorPro",
+  "version": "1.0.0",
+  "description": "Annotate and highlight on any webpage content.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "offline_enabled": true,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icons/logo.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "128": "icons/logo.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "commands": {
+    "highlight": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+H"
+      },
+      "description": "Highlight selected text"
+    },
+    "add_note": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+N"
+      },
+      "description": "Add a note"
+    }
+  }
+}
